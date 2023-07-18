@@ -16,11 +16,11 @@ export class ConfirmDialogComponent {
   ) {}
 
   onNoClick(): void {
-    this.dialogRef.close();
+    this.dialogRef.close(false);
   }
 
   onConfirm(): void {
-    this.dialogRef.close(false)
+    this.dialogRef.close(true)
   }
 
 }
